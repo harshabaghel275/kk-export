@@ -76,7 +76,7 @@ export function Footer() {
           </div>
 
           {/* Industries */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-xs sm:text-sm uppercase tracking-wider text-white mb-3 sm:mb-4">
               Industries
             </h4>
@@ -92,7 +92,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
           <div>
@@ -129,7 +129,7 @@ export function Footer() {
               <li className="flex items-start gap-2 sm:gap-2.5">
                 <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-silver mt-0.5 shrink-0" />
                 <span className="text-xs sm:text-sm text-silver leading-relaxed">
-                  TexVista Tower, Andheri East, Mumbai 400069, India
+                  313 GOVINDAM COMPLEX,GANDHI NAGAR,BHILWARA,311001 India
                 </span>
               </li>
               <li className="flex items-center gap-2 sm:gap-2.5">
@@ -138,16 +138,16 @@ export function Footer() {
                   href="tel:+15552345678" 
                   className="text-xs sm:text-sm text-silver hover:text-white transition-colors"
                 >
-                  +1 (555) 234-5678
+                  +91 9818434231
                 </a>
               </li>
               <li className="flex items-center gap-2 sm:gap-2.5">
                 <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-silver shrink-0" />
                 <a 
-                  href="mailto:info@texvistaglobal.com" 
+                  href="mailto:KKEXPORT95@GMAIL.COM" 
                   className="text-xs sm:text-sm text-silver hover:text-white transition-colors break-all"
                 >
-                  info@texvistaglobal.com
+                  KKEXPORT95@GMAIL.COM
                 </a>
               </li>
             </ul>

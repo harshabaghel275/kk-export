@@ -1350,7 +1350,7 @@ export function HomePage() {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
-          
+
       `}</style>
 
       {/* ===== HERO SECTION ===== */}
@@ -1689,7 +1689,7 @@ export function HomePage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Their technical expertise and quality consistency are unmatched in the industry.',
@@ -1732,7 +1732,68 @@ export function HomePage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+  {[
+    {
+      quote:
+        "We have been sourcing industrial-grade cotton fabrics for our garment manufacturing unit. The fabric durability, color consistency, and timely bulk delivery have significantly improved our production workflow.",
+      name: "Rohit Mehta",
+      role: "Procurement Manager",
+      company: "GlobalTex Apparel Pvt. Ltd.",
+    },
+    {
+      quote:
+        "Their technical textile solutions helped us develop high-performance uniforms for industrial workers. Quality testing standards and customization options are truly impressive for large-scale B2B requirements.",
+      name: "Anjali Verma",
+      role: "Operations Head",
+      company: "SafeWear Industries",
+    },
+    {
+      quote:
+        "We partnered with them for exporting premium woven fabrics to Europe. Packaging quality, export documentation, and consistent fabric finishing make them a reliable textile manufacturing partner.",
+      name: "David Fernandes",
+      role: "Director - Supply Chain",
+      company: "EuroFab Exports",
+    },
+  ].map((t) => (
+    <div
+      key={t.name}
+      className="bg-cloud-lighter rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 border border-cloud-dark hover:border-silver transition-all"
+    >
+      <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-silver-light mb-3 sm:mb-4" />
+
+      <div className="flex gap-0.5 sm:gap-1 mb-3 sm:mb-4">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Star
+            key={i}
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-charcoal fill-charcoal"
+          />
+        ))}
+      </div>
+
+      <p className="text-xs sm:text-sm text-silver-darker leading-relaxed mb-4 sm:mb-6">
+        {t.quote}
+      </p>
+
+      <div className="flex items-center gap-2.5 sm:gap-3">
+        <div className="w-10 h-10 sm:w-11 sm:h-11 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm flex-shrink-0">
+          {t.name.split(" ").map((n) => n[0]).join("")}
+        </div>
+
+        <div>
+          <p className="font-semibold text-charcoal text-xs sm:text-sm">
+            {t.name}
+          </p>
+          <p className="text-[10px] sm:text-xs text-silver-dark">
+            {t.role}, {t.company}
+          </p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
 
