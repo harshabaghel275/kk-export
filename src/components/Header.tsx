@@ -4,7 +4,8 @@ import { Menu, X, ChevronDown, Phone, Mail, MapPin } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', page: 'home' },
-  { label: 'About Us', page: 'about' },
+  { label: 'Who We ARE', page: 'about' },
+  { label: 'WHAT WE DO', page: 'industries' },
   {
     label: 'Products',
     page: 'products',
@@ -16,7 +17,7 @@ const navItems = [
       { label: 'Specialty Yarns', page: 'products' },
     ],
   },
-  { label: 'Industries', page: 'industries' },
+  
   {
     label: 'Capabilities',
     page: 'manufacturing',
@@ -26,7 +27,7 @@ const navItems = [
       { label: 'Certifications', page: 'certifications' },
     ],
   },
-  { label: 'Insights', page: 'blog' },
+  // { label: 'Insights', page: 'blog' },
   { label: 'Contact', page: 'contact' },
 ];
 
@@ -54,8 +55,8 @@ export function Header() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-charcoal-dark text-silver text-xs py-2.5 hidden lg:block">
+  
+      {/* <div className="bg-charcoal-dark text-silver text-xs py-2.5 hidden lg:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
@@ -72,7 +73,7 @@ export function Header() {
             <span className="text-white font-medium tracking-wide">ISO 9001:2015 Certified</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Nav */}
       <header
@@ -156,7 +157,7 @@ export function Header() {
                 onClick={() => navigate('contact')}
                 className="hidden sm:inline-flex items-center px-5 py-2.5 bg-charcoal text-white text-sm font-semibold rounded-lg hover:bg-charcoal-light transition-colors"
               >
-                Request Quote
+                Request FREE
               </button>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}

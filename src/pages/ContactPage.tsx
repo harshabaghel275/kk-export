@@ -181,7 +181,7 @@ export function ContactPage() {
                     <div className="flex items-start gap-2">
                       <input type="checkbox" required className="mt-1 rounded border-cloud-dark accent-charcoal" />
                       <span className="text-xs text-silver-darker">
-                        I agree to the processing of my personal data in accordance with the Privacy Policy. KK EXPORT  will use this information solely to respond to my inquiry.
+                        I agree to the processing of my personal data in accordance with the Privacy Policy. TexVista Global will use this information solely to respond to my inquiry.
                       </span>
                     </div>
 
@@ -200,10 +200,10 @@ export function ContactPage() {
                 <h3 className="text-lg font-bold text-charcoal mb-6">Get in Touch</h3>
                 <div className="space-y-5">
                   {[
-                    { icon: Building, label: 'Head Office', value: 'TexVista Tower, Andheri East,\nMumbai 400069, India' },
-                    { icon: Phone, label: 'Phone', value: '+1 (555) 234-5678\n+91 22 4567 8900' },
-                    { icon: Mail, label: 'Email', value: 'info@texvistaglobal.com\nsales@texvistaglobal.com' },
-                    { icon: Clock, label: 'Business Hours', value: 'Mon - Fri: 9:00 AM - 6:00 PM\nSat: 9:00 AM - 1:00 PM (IST)' },
+                    { icon: Building, label: 'Head Office', value: '313 GOVINDAM COMPLEX,GANDHI NAGAR,BHILWARA,311001 India' },
+                    { icon: Phone, label: 'Phone', value: '+91 9818434231' },
+                    { icon: Mail, label: 'Email', value: 'KKEXPORT95@GMAIL.COM' },
+                    { icon: Clock, label: 'Business Hours', value: 'Mon - SAT: 10:00 AM - 7:00 PM' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-3">
                       <div className="w-10 h-10 bg-cloud rounded-lg flex items-center justify-center shrink-0">
@@ -265,7 +265,7 @@ export function ContactPage() {
             <div className="absolute inset-0 bg-charcoal/60 flex items-center justify-center">
               <div className="text-center text-white">
                 <MapPin className="w-10 h-10 mx-auto mb-2 text-silver-light" />
-                <p className="font-semibold text-lg">KK EXPORT  Headquarters</p>
+                <p className="font-semibold text-lg">TexVista Global Headquarters</p>
                 <p className="text-silver text-sm">Mumbai, India — Serving 45+ Countries Worldwide</p>
               </div>
             </div>
