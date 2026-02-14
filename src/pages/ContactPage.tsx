@@ -91,22 +91,22 @@ export function ContactPage() {
                         <div>
                           <label className="block text-sm font-medium text-charcoal mb-1.5">First Name *</label>
                           <input type="text" name="firstName" required value={formData.firstName} onChange={handleChange}
-                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="John" />
+                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="" />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-charcoal mb-1.5">Last Name *</label>
                           <input type="text" name="lastName" required value={formData.lastName} onChange={handleChange}
-                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="Smith" />
+                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="" />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-charcoal mb-1.5">Business Email *</label>
                           <input type="email" name="email" required value={formData.email} onChange={handleChange}
-                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="john@company.com" />
+                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="" />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-charcoal mb-1.5">Phone Number</label>
                           <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
-                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="+1 (555) 000-0000" />
+                            className="w-full px-4 py-2.5 border border-cloud-dark rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-charcoal focus:border-transparent text-charcoal" placeholder="" />
                         </div>
                       </div>
                     </div>
@@ -249,7 +249,7 @@ export function ContactPage() {
                   Lorem ipsum dolor sit amet. Our B2B specialists are available during business hours.
                 </p>
                 <a href="tel:+15552345678" className="inline-flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/20 rounded-lg text-sm font-semibold transition-colors border border-white/15">
-                  <Phone className="w-4 h-4" /> +1 (555) 234-5678
+                  <Phone className="w-4 h-4" /> 
                 </a>
               </div>
             </div>
