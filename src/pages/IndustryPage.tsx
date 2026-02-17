@@ -25,25 +25,24 @@ function TexImg({ src, alt, className = '' }: { src: string; alt: string; classN
 
 const industries = [
   {
-    name: 'Automotive',
-    icon: Car,
-    img: IMG.fabricTexture1,
-    headline: 'Advanced Textiles for Automotive Innovation',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. From interior upholstery to structural reinforcements, our automotive textiles meet the stringent requirements of leading OEMs worldwide.',
-    applications: ['Seat Cover Fabrics', 'Airbag Textiles', 'Headliner Materials', 'Tire Cord Fabric', 'Acoustic Insulation', 'Trunk Lining'],
-    stats: [{ value: '35+', label: 'OEM Partners' }, { value: '120+', label: 'SKUs' }],
+    
+    
+    img: '/image/endtoend.png',
+    headline: 'End-to-End Garment Production Management',
+    desc: 'As a professional apparel sourcing company in India, we handle the entire garment supply chain including:',
+    applications: ['Product development & sampling', 'Fabric and trim sourcing', 'Vendor selection & negotiation', 'Bulk production management', 'Quality assurance & inspection', 'Compliance coordination'],
+    stats: [{  }, {  }],
   },
   {
-    name: 'Aerospace & Defense',
-    icon: Plane,
+  
     img: IMG.fabricTexture2,
-    headline: 'Mission-Critical Fabrics for Aerospace',
-    desc: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our aerospace-grade textiles undergo rigorous testing and certification to meet the most demanding specifications.',
-    applications: ['Composite Reinforcement', 'Ballistic Protection', 'Thermal Barriers', 'Parachute Fabrics', 'Interior Textiles', 'Camouflage Nets'],
-    stats: [{ value: '15+', label: 'Defense Contracts' }, { value: '90+', label: 'SKUs' }],
+    headline: 'Bulk Order Handling Expertise',
+    desc: 'We specialize in managing high-volume garment orders for global brands.',
+    applications: ['Large production capacity coordination', 'Multi-factory production planning', 'Timeline management', 'Cost optimization', 'Risk control and production monitoring'],
+    stats: [{ }, {  }],
   },
   {
-    name: 'Healthcare & Medical',
+    name: 'Bulk Order Handling Expertise',
     icon: Stethoscope,
     img: IMG.fabricTexture3,
     headline: 'Hygienic Textiles for Healthcare',
@@ -52,31 +51,29 @@ const industries = [
     stats: [{ value: '200+', label: 'Hospital Partners' }, { value: '180+', label: 'SKUs' }],
   },
   {
-    name: 'Construction & Architecture',
-    icon: HardHat,
+  
     img: IMG.wovenClose1,
-    headline: 'Structural Textiles for Construction',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Our construction-grade fabrics provide reinforcement, protection, and aesthetic solutions for modern architecture.',
-    applications: ['Tensile Structures', 'Geotextiles', 'Scaffolding Nets', 'Roofing Membranes', 'Concrete Reinforcement', 'Facade Systems'],
-    stats: [{ value: '500+', label: 'Projects' }, { value: '150+', label: 'SKUs' }],
+    headline: 'Strong Vendor Network Across India',
+    desc: 'As an established garment buying house in India, we work with:',
+    applications: ['Certified garment manufacturers', 'Compliant export factories', 'Specialized knit and woven units', 'Sustainable production partners'],
+    stats: [{  }, {  }],
   },
   {
-    name: 'Agriculture',
-    icon: Tractor,
+    
     img: IMG.wovenClose2,
-    headline: 'Protective Textiles for Agriculture',
-    desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. Our agro-textiles enhance crop protection, soil management, and agricultural productivity.',
-    applications: ['Crop Covers', 'Shade Nets', 'Mulch Films', 'Greenhouse Fabrics', 'Irrigation Textiles', 'Silage Covers'],
-    stats: [{ value: '1000+', label: 'Farms Served' }, { value: '80+', label: 'SKUs' }],
+    headline: 'Quality & Compliance Focus',
+    desc: 'Quality is at the core of our operations',
+    applications: ['Pre-production approvals', 'Inline inspections', 'Mulch Films', 'Measurement verification', 'Packaging checks', 'Social and technical compliance coordination'],
+    stats: [{ }, { }],
   },
   {
-    name: 'Energy & Environment',
+    name: 'International Market Expertise',
     icon: Flame,
     img: IMG.production1,
-    headline: 'High-Performance Textiles for Energy Sector',
-    desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Our filtration and insulation textiles serve power generation and environmental applications.',
-    applications: ['Baghouse Filters', 'Thermal Insulation', 'Cable Wrapping', 'Wind Turbine Fabrics', 'Oil Spill Barriers', 'Solar Panel Covers'],
-    stats: [{ value: '75+', label: 'Energy Clients' }, { value: '110+', label: 'SKUs' }],
+    headline: 'International Market Expertise',
+    desc: 'We serve global clients across',
+    applications: ['Europe', 'USA', 'Middle East', 'Australia', 'Emerging fashion markets'],
+    stats: [{  }, {  }],
   },
 ];
 
@@ -95,10 +92,10 @@ export function IndustryPage() {
           <div className="max-w-3xl">
             <span className="text-silver-light font-semibold text-xs sm:text-sm uppercase tracking-wider">Industry Solutions</span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-2 sm:mt-3 mb-4 sm:mb-6 leading-tight">
-              Textiles Engineered for Every Industry
+             Global Garment Buying House Capabilities
             </h1>
             <p className="text-silver text-base sm:text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. We develop and supply specialized textile solutions for the world's most demanding industries.
+              KK Export is one of the leading garment buying house agencies in India, delivering complete apparel sourcing and bulk production solutions for international fashion brands and retailers. With a strong vendor network, experienced merchandising team, and structured quality systems, we manage large-scale garment orders from development to final dispatch.
             </p>
           </div>
         </div>
@@ -120,10 +117,10 @@ export function IndustryPage() {
               
               {/* Content */}
               <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4 bg-cloud-light text-charcoal">
+                {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4 bg-cloud-light text-charcoal">
                   <industry.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {industry.name}
-                </div>
+                </div> */}
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-charcoal mb-3 sm:mb-4">
                   {industry.headline}
                 </h2>
@@ -142,14 +139,14 @@ export function IndustryPage() {
                 </div>
 
                 {/* Stats */}
-                <div className="flex gap-6 sm:gap-8 mb-5 sm:mb-6">
+                {/* <div className="flex gap-6 sm:gap-8 mb-5 sm:mb-6">
                   {industry.stats.map((stat) => (
                     <div key={stat.label}>
                       <p className="text-xl sm:text-2xl font-bold text-charcoal">{stat.value}</p>
                       <p className="text-xs sm:text-sm text-silver-dark">{stat.label}</p>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 {/* CTA Button */}
                 <button
@@ -165,7 +162,7 @@ export function IndustryPage() {
       </section>
 
       {/* Additional Sectors */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-cloud-lighter">
+      {/* <section className="py-12 sm:py-16 lg:py-20 bg-cloud-lighter">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-charcoal">Additional Sectors We Serve</h2>
@@ -187,7 +184,7 @@ export function IndustryPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="relative overflow-hidden">

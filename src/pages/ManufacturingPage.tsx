@@ -49,10 +49,10 @@ export function ManufacturingPage() {
           <div className="max-w-3xl">
             <span className="text-silver-light font-semibold text-sm uppercase tracking-wider">Manufacturing Excellence</span>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3 mb-6 leading-tight">
-              State-of-the-Art Manufacturing Capabilities
+              Advanced Apparel Sourcing & Production Network
             </h1>
             <p className="text-silver text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our vertically integrated manufacturing ecosystem spans 500,000+ sq. ft. across three continents with Industry 4.0 technology.
+              KK Exports India operates through a strong network of certified garment manufacturing units across India. Our integrated sourcing and production ecosystem ensures high-quality apparel manufacturing with strict compliance, modern machinery, and efficient bulk order execution
             </p>
           </div>
         </div>
@@ -63,10 +63,10 @@ export function ManufacturingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              { value: '500K+', label: 'Sq. Ft. Facility', icon: Factory },
-              { value: '350+', label: 'Machines', icon: Cog },
-              { value: '3,500+', label: 'Skilled Workers', icon: Gauge },
-              { value: '24/7', label: 'Operations', icon: Zap },
+              { value: '500K+', label: 'Garment Production Capacity (Monthly Units)', icon: Factory },
+              { value: '350+', label: 'Associated Manufacturing Units', icon: Cog },
+              { value: '3,500+', label: 'Skilled Workforce Across Partner Factories', icon: Gauge },
+              { value: '24/7', label: 'Production Coordination & Monitoring', icon: Zap },
               { value: '99.2%', label: 'On-Time Delivery', icon: Truck },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-4">
@@ -88,7 +88,7 @@ export function ManufacturingPage() {
               End-to-End Manufacturing Workflow
             </h2>
             <p className="text-silver-darker max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet. Our integrated process ensures complete quality control from fiber to finished fabric.
+              Our structured workflow ensures complete transparency and quality control from fabric sourcing to final shipment.
             </p>
           </div>
 
@@ -126,9 +126,9 @@ export function ManufacturingPage() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { location: 'Mumbai, India', type: 'Headquarters & Primary Plant', area: '300,000 sq. ft.', capabilities: ['Weaving', 'Dyeing', 'Finishing', 'R&D Center'], img: IMG.production1 },
-              { location: 'Ahmedabad, India', type: 'Coating & Specialty Plant', area: '150,000 sq. ft.', capabilities: ['Coating', 'Lamination', 'Nonwoven', 'Testing Lab'], img: IMG.fabricTexture3 },
-              { location: 'Manchester, UK', type: 'European Operations Hub', area: '50,000 sq. ft.', capabilities: ['Finishing', 'Quality Control', 'Distribution', 'Custom Solutions'], img: IMG.wovenClose2 },
+              { location: 'Delhi, India', type: 'Headquarters & Primary Plant', area: '300,000 sq. ft.', capabilities: ['Weaving', 'Dyeing', 'Finishing', 'R&D Center'], img: IMG.production1 },
+              { location: 'Bhilwara, India', type: 'Coating & Specialty Plant', area: '150,000 sq. ft.', capabilities: ['Coating', 'Lamination', 'Nonwoven', 'Testing Lab'], img: IMG.fabricTexture3 },
+              { location: 'Noida, UK', type: 'European Operations Hub', area: '50,000 sq. ft.', capabilities: ['Finishing', 'Quality Control', 'Distribution', 'Custom Solutions'], img: IMG.wovenClose2 },
             ].map((facility) => (
               <div key={facility.location} className="bg-white rounded-2xl overflow-hidden border border-cloud-dark hover:border-silver hover:shadow-md transition-all">
                 <TexImg src={facility.img} alt={facility.location} className="w-full h-48" />

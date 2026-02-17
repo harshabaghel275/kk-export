@@ -219,17 +219,19 @@ export function ContactPage() {
               </div>
 
               {/* Global Offices */}
-              <div className="bg-cloud-lighter rounded-2xl p-6 border border-cloud-dark">
+              {/* <div className="bg-cloud-lighter rounded-2xl p-6 border border-cloud-dark">
                 <h3 className="text-lg font-bold text-charcoal mb-4 flex items-center gap-2">
                   <Globe2 className="w-5 h-5 text-charcoal" /> Global Offices
                 </h3>
                 <div className="space-y-4">
                   {[
-                    { city: 'Mumbai, India', type: 'Headquarters' },
-                    { city: 'Ahmedabad, India', type: 'Manufacturing Hub' },
-                    { city: 'New York, USA', type: 'Americas Office' },
-                    { city: 'Manchester, UK', type: 'Europe Office' },
-                    { city: 'Shanghai, China', type: 'Asia Pacific Office' },
+                    { city: 'Delhi', type: 'India' },
+                    { city: 'Noida ', type: 'India' },
+                    { city: 'Bhilwara', type: 'India' },
+                    { city: 'Madurai', type: 'India' },
+                    { city: 'tirupurr', type: 'India' },
+                      { city: 'karur', type: 'India' },
+                       { city: 'Panipat ', type: 'India' },
                   ].map((office) => (
                     <div key={office.city} className="flex items-center gap-3">
                       <MapPin className="w-4 h-4 text-silver-dark shrink-0" />
@@ -240,7 +242,56 @@ export function ContactPage() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
+<div className="bg-cloud-lighter rounded-3xl p-8 border border-cloud-dark shadow-sm hover:shadow-md transition-all duration-300">
+  
+  {/* Header */}
+  <div className="flex items-center justify-between mb-6">
+    <h3 className="text-xl font-bold text-charcoal flex items-center gap-3">
+      <div className="p-2 rounded-xl bg-cloud-dark/20">
+        <Globe2 className="w-5 h-5 text-charcoal" />
+      </div>
+      Global Offices
+    </h3>
+
+    <span className="text-xs px-3 py-1 rounded-full bg-cloud-dark/20 text-charcoal font-medium">
+      India
+    </span>
+  </div>
+
+  {/* Offices Grid */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {[
+      "Delhi",
+      "Noida",
+      "Bhilwara",
+      "Madurai",
+      "Tirupur",
+      "Karur",
+      "Panipat",
+    ].map((city) => (
+      <div
+        key={city}
+        className="flex items-center gap-3 p-3 rounded-2xl hover:bg-cloud-dark/10 transition-all duration-200"
+      >
+        <div className="p-2 rounded-lg bg-cloud-dark/20">
+          <MapPin className="w-4 h-4 text-silver-dark" />
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-charcoal">
+            {city}
+          </p>
+          <p className="text-xs text-silver-dark">
+            India
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
 
               {/* Quick Contact CTA */}
               <div className="bg-charcoal rounded-2xl p-6 text-white">

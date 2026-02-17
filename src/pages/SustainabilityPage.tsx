@@ -36,10 +36,10 @@ export function SustainabilityPage() {
           <div className="max-w-3xl">
             <span className="text-silver-light font-semibold text-sm uppercase tracking-wider">Sustainability</span>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3 mb-6 leading-tight">
-              Weaving a Sustainable Future for Textiles
+             Responsible Garment Sourcing for a Better Future
             </h1>
             <p className="text-silver text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our commitment to environmental stewardship drives every decision, from raw material sourcing to final product delivery.
+              At KK Export, sustainability is an essential part of our garment sourcing process. As a responsible garment buying house in India, we work closely with compliant manufacturers to ensure ethical production, environmental responsibility, and transparent supply chains..
             </p>
           </div>
         </div>
@@ -81,35 +81,35 @@ export function SustainabilityPage() {
             {[
               {
                 icon: Leaf,
-                title: 'Environmental Stewardship',
+                title: 'Environmental Responsibility',
                 items: [
-                  'Zero liquid discharge water treatment',
-                  'Solar-powered production facilities',
-                  'Biodegradable packaging initiative',
-                  'Chemical management ZDHC compliance',
-                  'Scope 1 & 2 emission tracking',
+                  'Waste reduction practices',
+                  'Water management systems',
+                  'Energy-efficient production',
+                  'Reduced chemical usage',
+                  'Sustainable packaging solutions',
                 ],
               },
               {
                 icon: Target,
                 title: 'Social Responsibility',
                 items: [
-                  'Fair wage & benefits program',
-                  'Worker safety excellence (0 LTI)',
-                  'Community development initiatives',
-                  'Gender diversity & inclusion targets',
-                  'Education & skill development programs',
+                  'Fair labor practices',
+                  'Safe working environments',
+                  'No child or forced labor',
+                  'Compliance with international social standards',
+                  'Worker welfare and transparency',
                 ],
               },
               {
                 icon: Wind,
-                title: 'Governance & Ethics',
+                title: 'Ethical Governance',
                 items: [
-                  'Transparent supply chain mapping',
-                  'Anti-corruption policies & audits',
-                  'Board-level ESG oversight',
-                  'Stakeholder engagement framework',
-                  'Annual sustainability reporting',
+                  'Transparent vendor management',
+                  'Factory compliance monitoring',
+                  'Clear documentation & reporting',
+                  'Long-term responsible partnerships',
+                  
                 ],
               },
             ].map((pillar) => (
@@ -137,15 +137,15 @@ export function SustainabilityPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-silver-dark font-semibold text-sm uppercase tracking-wider">Circular Economy</span>
+              <span className="text-silver-dark font-semibold text-sm uppercase tracking-wider"></span>
               <h2 className="text-3xl lg:text-4xl font-bold text-charcoal mt-3 mb-6">
-                Closing the Loop in Textile Production
+                Our Vision for Sustainable Growth
               </h2>
               <p className="text-silver-darker leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our circular economy model transforms textile waste into valuable raw materials.
+               We aim to strengthen our position as a trusted garment buying house in India by promoting sustainable apparel sourcing and responsible manufacturing practices for global brands.
               </p>
               <p className="text-silver-darker leading-relaxed mb-8">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Through innovative recycling technologies we convert waste into premium recycled fibers.
+                Our long-term goal is to support environmentally conscious production while delivering high-quality garments to international markets.
               </p>
               <div className="space-y-3">
                 {[
@@ -167,7 +167,7 @@ export function SustainabilityPage() {
       </section>
 
       {/* 2030 Goals */}
-      <section className="py-16 lg:py-24 bg-white">
+      {/* <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <span className="text-silver-dark font-semibold text-sm uppercase tracking-wider">Vision 2030</span>
@@ -193,7 +193,7 @@ export function SustainabilityPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="relative overflow-hidden">
