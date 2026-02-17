@@ -13,12 +13,15 @@ import { SustainabilityPage } from "./pages/SustainabilityPage";
 import { CertificationsPage } from "./pages/CertificationsPage";
 import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
-import { OurCsrPage } from "./pages/ourcsrpage"; // ✅ Capital letter
+import { OurCsrPage } from "./pages/ourcsrpage"; // ✅ fixed casing
+
+// TypeScript type for pages object
+type PagesMap = Record<string, React.ReactNode>;
 
 function PageRouter() {
   const { currentPage } = useNavigation();
 
-  const pages: Record<string, React.ReactNode> = {
+  const pages: PagesMap = {
     home: <HomePage />,
     about: <AboutPage />,
     products: <ProductsPage />,
@@ -28,9 +31,10 @@ function PageRouter() {
     certifications: <CertificationsPage />,
     blog: <BlogPage />,
     contact: <ContactPage />,
-    ourcsr: <OurCsrPage />, // ✅ fixed
+    ourcsr: <OurCsrPage />,
   };
 
+  // Return current page or fallback to HomePage
   return <>{pages[currentPage] || <HomePage />}</>;
 }
 
