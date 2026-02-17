@@ -31,7 +31,7 @@ export function ContactPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      {/* <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={IMG.wovenClose3} alt="Woven textile" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-charcoal-dark/85" />
@@ -43,11 +43,11 @@ export function ContactPage() {
               Let's Discuss Your Textile Requirements
             </h1>
             <p className="text-silver text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Whether you need a custom technical textile solution, bulk pricing, or partnership discussion, our B2B specialists are ready to help.
+              At KK Exports India, we are ready to support your apparel sourcing needs with reliable solutions and professional coordination. Whether you are looking for custom garment development, bulk production, fabric sourcing, or a long-term buying house partnership, our experienced team is here to assist you.
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Content */}
       <section className="py-12 lg:py-20 bg-white">
@@ -61,7 +61,7 @@ export function ContactPage() {
                     <MessageSquare className="w-5 h-5 text-charcoal" />
                   </div>
                   <div>
-                    <h2 className="text-xl font-bold text-charcoal">B2B Inquiry Form</h2>
+                    <h2 className="text-xl font-bold text-charcoal">Inquiry Form</h2>
                     <p className="text-sm text-silver-dark">Fill in the details below and our team will respond within 24 hours.</p>
                   </div>
                 </div>
@@ -243,51 +243,115 @@ export function ContactPage() {
                   ))}
                 </div>
               </div> */}
-<div className="bg-cloud-lighter rounded-3xl p-8 border border-cloud-dark shadow-sm hover:shadow-md transition-all duration-300">
-  
-  {/* Header */}
-  <div className="flex items-center justify-between mb-6">
-    <h3 className="text-xl font-bold text-charcoal flex items-center gap-3">
-      <div className="p-2 rounded-xl bg-cloud-dark/20">
-        <Globe2 className="w-5 h-5 text-charcoal" />
-      </div>
-      Global Offices
-    </h3>
+<div
+  style={{
+    background: "linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #111111 100%)",
+    borderRadius: "24px",
+    padding: "0",
+    border: "1px solid #2a2a2a",
+    overflow: "hidden",
+    boxShadow: "0 8px 40px rgba(0,0,0,0.18), 0 1px 0 rgba(255,255,255,0.05) inset",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    position: "relative",
+  }}
+>
+  {/* Subtle top glow */}
+  <div style={{
+    position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)",
+    width: "60%", height: "1px",
+    background: "linear-gradient(90deg, transparent, #ffffff22, transparent)",
+  }} />
 
-    <span className="text-xs px-3 py-1 rounded-full bg-cloud-dark/20 text-charcoal font-medium">
-      India
+  {/* Header */}
+  <div style={{
+    display: "flex", alignItems: "center", justifyContent: "space-between",
+    padding: "24px 28px 20px",
+    borderBottom: "1px solid #222",
+  }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+      <div style={{
+        width: "38px", height: "38px", borderRadius: "10px",
+        background: "linear-gradient(135deg, #ffffff15, #ffffff08)",
+        border: "1px solid #333",
+        display: "flex", alignItems: "center", justifyContent: "center",
+      }}>
+        <Globe2 className="w-4 h-4" style={{ color: "#e0e0e0" }} />
+      </div>
+      <div>
+        <h3 style={{ fontSize: "15px", fontWeight: 700, color: "#f0f0f0", margin: 0, letterSpacing: "-0.01em" }}>
+          Global Offices
+        </h3>
+        <p style={{ fontSize: "11px", color: "#555", margin: 0, marginTop: "1px" }}>
+          {7} locations across India
+        </p>
+      </div>
+    </div>
+
+    <span style={{
+      fontSize: "11px", fontWeight: 600,
+      padding: "4px 12px", borderRadius: "100px",
+      background: "#ffffff10", color: "#aaa",
+      border: "1px solid #333", letterSpacing: "0.05em",
+    }}>
+      🇮🇳 India
     </span>
   </div>
 
-  {/* Offices Grid */}
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+  {/* Cities Grid */}
+  <div style={{
+    display: "grid", gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "1px", background: "#2B2B2B",
+    margin: "0",
+  }}>
     {[
-      "Delhi",
-      "Noida",
-      "Bhilwara",
-      "Madurai",
-      "Tirupur",
-      "Karur",
-      "Panipat",
-    ].map((city) => (
+      { city: "Delhi",    sub: "National Capital" },
+      { city: "Noida",    sub: "Uttar Pradesh"    },
+      { city: "Bhilwara", sub: "Rajasthan"        },
+      { city: "Madurai",  sub: "Tamil Nadu"       },
+      { city: "Tirupur",  sub: "Tamil Nadu"       },
+      { city: "Karur",    sub: "Tamil Nadu"       },
+     
+    ].map((item, i) => (
       <div
-        key={city}
-        className="flex items-center gap-3 p-3 rounded-2xl hover:bg-cloud-dark/10 transition-all duration-200"
+        key={item.city}
+        style={{
+          background: "#111",
+          padding: "16px 18px",
+          display: "flex", alignItems: "center", gap: "10px",
+          cursor: "default",
+          transition: "background 0.2s",
+          // last item if odd spans 1 col
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.background = "#1c1c1c")}
+        onMouseLeave={(e) => (e.currentTarget.style.background = "#111")}
       >
-        <div className="p-2 rounded-lg bg-cloud-dark/20">
-          <MapPin className="w-4 h-4 text-silver-dark" />
-        </div>
-
+        {/* Dot indicator */}
+        {/* <div style={{
+          width: "6px", height: "6px", borderRadius: "50%",
+          background: "linear-gradient(135deg, #c9b99a, #8a7d6a)",
+          flexShrink: 0,
+          boxShadow: "0 0 6px #c9b99a55",
+        }} /> */}
         <div>
-          <p className="text-sm font-semibold text-charcoal">
-            {city}
+          <p style={{ fontSize: "13px", fontWeight: 600, color: "#e8e8e8", margin: 0 }}>
+            {item.city}
           </p>
-          <p className="text-xs text-silver-dark">
-            India
+          <p style={{ fontSize: "10px", color: "#555", margin: 0, marginTop: "1px" }}>
+            {item.sub}
           </p>
         </div>
       </div>
     ))}
+  </div>
+
+  {/* Footer strip */}
+  <div style={{
+    padding: "12px 28px",
+    borderTop: "1px solid #1e1e1e",
+    display: "flex", alignItems: "center", gap: "6px",
+  }}>
+    <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4ade80", boxShadow: "0 0 6px #4ade8088" }} />
+    <span style={{ fontSize: "11px", color: "#444" }}>All offices operational</span>
   </div>
 </div>
 
@@ -297,10 +361,10 @@ export function ContactPage() {
               <div className="bg-charcoal rounded-2xl p-6 text-white">
                 <h3 className="text-lg font-bold mb-2">Need Immediate Assistance?</h3>
                 <p className="text-sm text-silver mb-4">
-                  Lorem ipsum dolor sit amet. Our B2B specialists are available during business hours.
+                  {/* Lorem ipsum dolor sit amet. Our B2B specialists are available during business hours. */}
                 </p>
                 <a href="tel:+15552345678" className="inline-flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/20 rounded-lg text-sm font-semibold transition-colors border border-white/15">
-                  <Phone className="w-4 h-4" /> 
+                  <Phone className="w-4 h-4" /> +91 9818434231
                 </a>
               </div>
             </div>
@@ -309,7 +373,7 @@ export function ContactPage() {
       </section>
 
       {/* Map Placeholder */}
-      <section className="bg-cloud-lighter">
+      {/* <section className="bg-cloud-lighter">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="relative rounded-2xl h-[300px] overflow-hidden border border-cloud-dark">
             <img src={IMG.fabricRolls3} alt="Fabric production" className="w-full h-full object-cover" />
@@ -322,7 +386,27 @@ export function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+      <section className="bg-cloud-lighter">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <div className="relative rounded-2xl h-[300px] overflow-hidden border border-cloud-dark">
+      <iframe
+        title="KK Export Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.123456789!2d74.6313!3d25.3478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f84dce1234567%3A0xabcdef1234567890!2sBhilwara%2C%20Rajasthan%20311001%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style={{ border: 0, display: "block" }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+  </div>
+</section>
     </div>
   );
 }

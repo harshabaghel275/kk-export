@@ -27,24 +27,24 @@ const industries = [
   {
     
     
-    img: '/image/endtoend.png',
-    headline: 'End-to-End Garment Production Management',
-    desc: 'As a professional apparel sourcing company in India, we handle the entire garment supply chain including:',
-    applications: ['Product development & sampling', 'Fabric and trim sourcing', 'Vendor selection & negotiation', 'Bulk production management', 'Quality assurance & inspection', 'Compliance coordination'],
+    img: '/image/endtoend2.png',
+    headline: 'Integrated Garment Production & Global Supply Chain Management',
+    desc: 'KK Export provides comprehensive garment manufacturing solutions, specializing in bulk men’s wear, denim production, terry towels, and custom textile orders. Our vertically coordinated production system ensures cost efficiency, fabric consistency, and timely international shipments',
+    applications: ['Garment manufacturer in India', 'Bulk garment production', 'Textile export company', 'Denim manufacturing', 'Private label garment supplier', 'Terry towel manufacturer'],
     stats: [{  }, {  }],
   },
   {
   
-    img: IMG.fabricTexture2,
-    headline: 'Bulk Order Handling Expertise',
-    desc: 'We specialize in managing high-volume garment orders for global brands.',
-    applications: ['Large production capacity coordination', 'Multi-factory production planning', 'Timeline management', 'Cost optimization', 'Risk control and production monitoring'],
+    img: '/image/bulk1.png',
+    headline: 'Bulk Plain T-Shirt Manufacturing & Order Management',
+    desc: 'We specialize in high-volume plain T-shirt production for global brands, wholesalers, and private labels. From fabric sourcing to final shipment, we manage every stage with precision and efficiency',
+    applications: ['Large-scale production capacity coordination', ' Multi-factory production planning', ' On-time delivery management', 'Cost optimization', 'Risk control & continuous production monitoring'],
     stats: [{ }, {  }],
   },
   {
     name: 'Bulk Order Handling Expertise',
     icon: Stethoscope,
-    img: IMG.fabricTexture3,
+    img: '/image/Health.png',
     headline: 'Hygienic Textiles for Healthcare',
     desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Our medical textiles combine antimicrobial properties with comfort and breathability for critical healthcare environments.',
     applications: ['Surgical Gowns', 'Wound Dressings', 'Implantable Meshes', 'Bed Linens', 'Protective Coveralls', 'Face Mask Media'],
@@ -52,7 +52,7 @@ const industries = [
   },
   {
   
-    img: IMG.wovenClose1,
+    img: '/image/location.png',
     headline: 'Strong Vendor Network Across India',
     desc: 'As an established garment buying house in India, we work with:',
     applications: ['Certified garment manufacturers', 'Compliant export factories', 'Specialized knit and woven units', 'Sustainable production partners'],
@@ -60,21 +60,21 @@ const industries = [
   },
   {
     
-    img: IMG.wovenClose2,
+    img:'/image/ocues1.png',
     headline: 'Quality & Compliance Focus',
     desc: 'Quality is at the core of our operations',
     applications: ['Pre-production approvals', 'Inline inspections', 'Mulch Films', 'Measurement verification', 'Packaging checks', 'Social and technical compliance coordination'],
     stats: [{ }, { }],
   },
-  {
-    name: 'International Market Expertise',
-    icon: Flame,
-    img: IMG.production1,
-    headline: 'International Market Expertise',
-    desc: 'We serve global clients across',
-    applications: ['Europe', 'USA', 'Middle East', 'Australia', 'Emerging fashion markets'],
-    stats: [{  }, {  }],
-  },
+  // {
+  //   name: 'International Market Expertise',
+  //   icon: Flame,
+  //   img: IMG.production1,
+  //   headline: 'International Market Expertise',
+  //   desc: 'We serve global clients across',
+  //   applications: ['Europe', 'USA', 'Middle East', 'Australia', 'Emerging fashion markets'],
+  //   stats: [{  }, {  }],
+  // },
 ];
 
 export function IndustryPage() {
@@ -95,8 +95,11 @@ export function IndustryPage() {
              Global Garment Buying House Capabilities
             </h1>
             <p className="text-silver text-base sm:text-lg leading-relaxed">
-              KK Export is one of the leading garment buying house agencies in India, delivering complete apparel sourcing and bulk production solutions for international fashion brands and retailers. With a strong vendor network, experienced merchandising team, and structured quality systems, we manage large-scale garment orders from development to final dispatch.
+              KK Export is one of the leading garment buying house agencies in India, delivering complete apparel sourcing and bulk production solutions for international fashion brands and retailers With a strong vendor network, experienced merchandising team, and structured quality systems, we manage large-scale garment orders from development to final dispatch
             </p>
+             {/* <p className="text-silver text-base sm:text-lg leading-relaxed">
+            With a strong vendor network, experienced merchandising team, and structured quality systems, we manage large-scale garment orders from development to final dispatch
+            </p> */}
           </div>
         </div>
       </section>
@@ -187,26 +190,60 @@ export function IndustryPage() {
       </section> */}
 
       {/* CTA */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMG.fabricRolls1} alt="Fabric rolls" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal/90" />
-        </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
-            Which Industry Do You Serve?
-          </h2>
-          <p className="text-sm sm:text-base text-silver mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Let our application engineers recommend the perfect textile solution for your specific industry needs.
-          </p>
-          <button
-            onClick={() => navigate('contact')}
-            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold text-sm sm:text-base rounded-lg hover:bg-cloud-light transition-colors"
-          >
-            Get Industry-Specific Consultation <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-          </button>
-        </div>
-      </section>
+     <section className="relative overflow-hidden">
+  <div className="absolute inset-0">
+    <img
+      src={IMG.fabricTexture1}
+      alt="Fabric texture"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-charcoal-dark/90" />
+    <div className="absolute inset-0 bg-weave-dark" />
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
+    
+    <h2
+      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+      style={{ fontFamily: "'Poppins', sans-serif" }}
+    >
+      Experience Our Quality Firsthand
+    </h2>
+
+    <p
+      className="text-sm sm:text-base lg:text-lg text-silver max-w-2xl mx-auto mb-8 sm:mb-10 px-4"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      Request a free fabric sample and evaluate our premium materials, 
+      craftsmanship, and finishing standards before placing your bulk order.
+      Our team will ensure quick dispatch with complete product details.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+      
+      {/* Primary Button */}
+      <button
+        onClick={() => navigate('contact')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold rounded-lg text-base sm:text-lg hover:bg-cloud-light transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:scale-95 group"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        Request a Free Sample
+        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      {/* Secondary Button */}
+      <button
+        onClick={() => navigate('products')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-lg text-base sm:text-lg border border-white/20 transition-all duration-300 hover:border-white/40 active:scale-95"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        View Our Products
+      </button>
+
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

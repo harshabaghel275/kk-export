@@ -29,8 +29,8 @@ export function SustainabilityPage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.eco1} alt="Sustainability" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal-dark/80" />
+          <img src="/image/slider3.jpg" alt="Sustainability" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 " />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
           <div className="max-w-3xl">
@@ -197,28 +197,59 @@ export function SustainabilityPage() {
 
       {/* CTA */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMG.fabricTexture3} alt="Fabric texture" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal/90" />
-        </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Download Our Sustainability Report</h2>
-          <p className="text-silver mb-8">
-            Lorem ipsum dolor sit amet. Get detailed insights into our environmental impact, social initiatives, and governance framework.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <button className="inline-flex items-center gap-2 px-8 py-4 bg-white text-charcoal font-bold rounded-lg hover:bg-cloud-light transition-colors">
-              Download Report 2024 <ArrowRight className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => navigate('contact')}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/15 transition-colors"
-            >
-              Partner With Us
-            </button>
-          </div>
-        </div>
-      </section>
+  <div className="absolute inset-0">
+    <img
+      src={IMG.fabricTexture1}
+      alt="Fabric texture"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-charcoal-dark/90" />
+    <div className="absolute inset-0 bg-weave-dark" />
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
+    
+    <h2
+      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+      style={{ fontFamily: "'Poppins', sans-serif" }}
+    >
+      Experience Our Quality Firsthand
+    </h2>
+
+    <p
+      className="text-sm sm:text-base lg:text-lg text-silver max-w-2xl mx-auto mb-8 sm:mb-10 px-4"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      Request a free fabric sample and evaluate our premium materials, 
+      craftsmanship, and finishing standards before placing your bulk order.
+      Our team will ensure quick dispatch with complete product details.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+      
+      {/* Primary Button */}
+      <button
+        onClick={() => navigate('contact')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold rounded-lg text-base sm:text-lg hover:bg-cloud-light transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:scale-95 group"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        Request a Free Sample
+        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      {/* Secondary Button */}
+      <button
+        onClick={() => navigate('products')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-lg text-base sm:text-lg border border-white/20 transition-all duration-300 hover:border-white/40 active:scale-95"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        View Our Products
+      </button>
+
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

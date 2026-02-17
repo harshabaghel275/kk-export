@@ -407,33 +407,64 @@ export function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-cloud-lighter">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10 sm:mb-14">
-            <span className="text-silver-dark font-semibold text-xs sm:text-sm uppercase tracking-wider">Leadership Team</span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mt-2 sm:mt-3">The Minds Behind TexVista</h2>
+     <section className="py-12 sm:py-16 lg:py-24 bg-cloud-lighter">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <div className="text-center mb-10 sm:mb-14">
+     <span className="text-silver-dark font-semibold text-xs sm:text-sm uppercase tracking-wider">
+  Leadership & Strategy
+</span>
+<h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mt-2 sm:mt-3">
+  The Team Behind KK Exports 
+</h2>
+
+    </div>
+
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+      {[
+        { name: 'Kanishk Surana',  role: 'Founder & Creative Director', initials: 'KS', image: '/image/sirimage.webp' },
+        { name: 'Priya Sharma',    role: 'Marketing Manager',      initials: 'PS', image: '/image/team/priya.png'    },
+        { name: 'Rahul Mishra',   role: 'Sales Manager',             initials: 'DC', image: '/image/team/david.png'   },
+        { name: 'Ankit Verma',    role: 'Factory Manager',       initials: 'AT', image: '/image/team/akira.png'   },
+      ].map((person) => (
+        <div
+          key={person.name}
+          className="bg-white rounded-xl sm:rounded-2xl overflow-hidden border border-cloud-dark hover:border-silver hover:shadow-md transition-all"
+        >
+          {/* Image / Fallback */}
+          <div className="h-32 sm:h-48 lg:h-52 bg-cloud overflow-hidden relative">
+            {person.image ? (
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-full h-full object-cover object-top"
+                onError={(e) => {
+                  // fallback to initials if image fails to load
+                  e.currentTarget.style.display = 'none';
+                  const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+            ) : null}
+            {/* Initials fallback — hidden by default if image exists */}
+            <div
+              className="absolute inset-0 flex items-center justify-center"
+              style={{ display: person.image ? 'none' : 'flex' }}
+            >
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-silver">
+                {person.initials}
+              </span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
-            {[
-              { name: 'Rajesh Mehta', role: 'Chairman & Founder', initials: 'RM' },
-              { name: 'Priya Sharma', role: 'CEO & Managing Director', initials: 'PS' },
-              { name: 'David Collins', role: 'CTO — Innovation', initials: 'DC' },
-              { name: 'Akira Tanaka', role: 'VP — Global Operations', initials: 'AT' },
-            ].map((person) => (
-              <div key={person.name} className="bg-white rounded-xl sm:rounded-2xl overflow-hidden border border-cloud-dark hover:border-silver hover:shadow-md transition-all">
-                <div className="h-32 sm:h-48 lg:h-52 bg-cloud flex items-center justify-center">
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-silver">{person.initials}</span>
-                </div>
-                <div className="p-3 sm:p-5 text-center">
-                  <h3 className="font-bold text-charcoal text-sm sm:text-base">{person.name}</h3>
-                  <p className="text-xs sm:text-sm text-silver-dark mt-0.5 sm:mt-1">{person.role}</p>
-                </div>
-              </div>
-            ))}
+          <div className="p-3 sm:p-5 text-center">
+            <h3 className="font-bold text-charcoal text-sm sm:text-base">{person.name}</h3>
+            <p className="text-xs sm:text-sm text-silver-dark mt-0.5 sm:mt-1">{person.role}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 lg:py-24 bg-white">
@@ -463,24 +494,59 @@ export function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMG.wovenClose3} alt="Woven textile" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal/90" />
-        </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Partner With KK EXPORT</h2>
-          <p className="text-silver text-sm sm:text-base mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Join 150+ enterprise clients who trust TexVista for their mission-critical textile requirements.
-          </p>
-          <button
-            onClick={() => navigate('contact')}
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold text-sm sm:text-base rounded-lg hover:bg-cloud-light transition-colors"
-          >
-            Start a Conversation <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-          </button>
-        </div>
-      </section>
+         <section className="relative overflow-hidden">
+  <div className="absolute inset-0">
+    <img
+      src={IMG.fabricTexture1}
+      alt="Fabric texture"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-charcoal-dark/90" />
+    <div className="absolute inset-0 bg-weave-dark" />
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
+    
+    <h2
+      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+      style={{ fontFamily: "'Poppins', sans-serif" }}
+    >
+      Experience Our Quality Firsthand
+    </h2>
+
+    <p
+      className="text-sm sm:text-base lg:text-lg text-silver max-w-2xl mx-auto mb-8 sm:mb-10 px-4"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      Request a free fabric sample and evaluate our premium materials, 
+      craftsmanship, and finishing standards before placing your bulk order.
+      Our team will ensure quick dispatch with complete product details.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+      
+      {/* Primary Button */}
+      <button
+        onClick={() => navigate('contact')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold rounded-lg text-base sm:text-lg hover:bg-cloud-light transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:scale-95 group"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        Request a Free Sample
+        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      {/* Secondary Button */}
+      <button
+        onClick={() => navigate('products')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-lg text-base sm:text-lg border border-white/20 transition-all duration-300 hover:border-white/40 active:scale-95"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        View Our Products
+      </button>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 }

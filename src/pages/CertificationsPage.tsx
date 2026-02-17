@@ -14,69 +14,67 @@ export function CertificationsPage() {
 
   const certifications = [
     {
-      name: 'ISO 9001:2015',
-      category: 'Quality Management',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. International standard for quality management systems ensuring consistent product quality.',
-      scope: 'All manufacturing facilities',
-      validUntil: 'Dec 2026',
-      body: 'Bureau Veritas',
+      name: 'ISO Quality System Alignment',
+      
+      desc: 'Structured quality management processes ensuring consistent production standards and documented traceability',
+     
     },
     {
-      name: 'ISO 14001:2015',
-      category: 'Environmental Management',
-      desc: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Environmental management certification demonstrating commitment to sustainability.',
-      scope: 'Mumbai & Ahmedabad plants',
-      validUntil: 'Jun 2026',
-      body: 'TÜV SÜD',
+      name: 'OEKO-TEX® Compatible Production Environment',
+      // category: 'Environmental Management',
+      desc: 'Manufacturing processes designed to meet international product safety requirements and restricted substance standards',
+      // scope: 'Mumbai & Ahmedabad plants',
+      // validUntil: 'Jun 2026',
+      // body: 'TÜV SÜD',
     },
     {
-      name: 'OEKO-TEX® Standard 100',
-      category: 'Product Safety',
-      desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Certification that textiles are free from harmful substances at every stage.',
-      scope: 'Medical & consumer textiles',
-      validUntil: 'Mar 2026',
-      body: 'Hohenstein Institute',
+      name: 'REACH-Aware Chemical Management',
+      // category: 'Product Safety',
+      desc: 'Strict monitoring and controlled usage of chemicals in accordance with EU regulatory guidelines.',
+      // scope: 'Medical & consumer textiles',
+      // validUntil: 'Mar 2026',
+      // body: 'Hohenstein Institute',
     },
     {
-      name: 'REACH Compliance',
-      category: 'Chemical Safety',
-      desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Full compliance with EU REACH regulations for chemical substance safety.',
-      scope: 'All EU-destined products',
-      validUntil: 'Ongoing',
-      body: 'European Chemicals Agency',
+      name: 'Sustainable Processing Practices',
+      // category: 'Chemical Safety',
+      desc: 'Energy-efficient production methods, responsible water usage, and environmentally conscious waste management systems.',
+      // scope: 'All EU-destined products',
+      // validUntil: 'Ongoing',
+      // body: 'European Chemicals Agency',
     },
     {
-      name: 'GRS (Global Recycled Standard)',
-      category: 'Sustainability',
-      desc: 'Excepteur sint occaecat cupidatat non proident. Verification of recycled content and responsible practices in production.',
-      scope: 'Recycled product lines',
-      validUntil: 'Sep 2025',
-      body: 'Control Union',
+      name: 'Ethical Manufacturing Commitment',
+      // category: 'Sustainability',
+      desc: 'Fair labor practices, safe working conditions, and responsible sourcing across all facilities and approved partners',
+      // scope: 'Recycled product lines',
+      // validUntil: 'Sep 2025',
+      // body: 'Control Union',
     },
     {
-      name: 'BSCI Audited',
-      category: 'Social Compliance',
-      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Audit certification for social compliance covering labor rights.',
-      scope: 'All facilities & suppliers',
-      validUntil: 'Aug 2025',
-      body: 'amfori BSCI',
+      name: 'Third-Party Audit Ready Infrastructure',
+      // category: 'Social Compliance',
+      desc: 'Transparent documentation, internal audit systems, and readiness for buyer inspections at any time.',
+      // scope: 'All facilities & suppliers',
+      // validUntil: 'Aug 2025',
+      // body: 'amfori BSCI',
     },
-    {
-      name: 'ISO 45001:2018',
-      category: 'Health & Safety',
-      desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Occupational health and safety management system certification.',
-      scope: 'All manufacturing facilities',
-      validUntil: 'Feb 2027',
-      body: 'DNV GL',
-    },
-    {
-      name: 'IATF 16949:2016',
-      category: 'Automotive Quality',
-      desc: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse. Automotive quality management system standard for supply chain.',
-      scope: 'Automotive product lines',
-      validUntil: 'Nov 2025',
-      body: 'SGS',
-    },
+    // {
+    //   name: 'ISO 45001:2018',
+    //   category: 'Health & Safety',
+    //   desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Occupational health and safety management system certification.',
+    //   scope: 'All manufacturing facilities',
+    //   validUntil: 'Feb 2027',
+    //   body: 'DNV GL',
+    // },
+    // {
+    //   name: 'IATF 16949:2016',
+    //   category: 'Automotive Quality',
+    //   desc: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse. Automotive quality management system standard for supply chain.',
+    //   scope: 'Automotive product lines',
+    //   validUntil: 'Nov 2025',
+    //   body: 'SGS',
+    // },
   ];
 
   return (
@@ -84,24 +82,27 @@ export function CertificationsPage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.wovenClose1} alt="Woven textile" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal-dark/85" />
+          <img src="/image/slider1.jpg" alt="Woven textile" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 " />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
           <div className="max-w-3xl">
-            <span className="text-silver-light font-semibold text-sm uppercase tracking-wider">Certifications & Compliance</span>
+            <span className="text-silver-light font-semibold text-sm uppercase tracking-wider"></span>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3 mb-6 leading-tight">
-              Globally Certified. Uncompromisingly Compliant.
+              Compliance & Certification Readiness
             </h1>
             <p className="text-silver text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our comprehensive certification portfolio reflects our commitment to quality, safety, and sustainability.
+           Our systems are fully aligned with global textile manufacturing standards, ensuring smooth audits, regulatory compliance, and buyer confidence across international markets.
+            </p>
+            <p className="text-silver text-lg leading-relaxed">
+            We proactively maintain structured processes, documentation, and operational controls to meet the evolving requirements of global brands and regulatory authorities
             </p>
           </div>
         </div>
       </section>
 
       {/* Trust Bar */}
-      <section className="py-8 bg-cloud-lighter border-b border-cloud-dark">
+      {/* <section className="py-8 bg-cloud-lighter border-b border-cloud-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
             {[
@@ -117,7 +118,7 @@ export function CertificationsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Certifications Grid */}
       <section className="py-16 lg:py-24 bg-white">
@@ -132,12 +133,12 @@ export function CertificationsPage() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-2 mb-2">
                       <h3 className="text-lg font-bold text-charcoal">{cert.name}</h3>
-                      <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-cloud-light text-charcoal border border-cloud-dark">
+                      {/* <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-cloud-light text-charcoal border border-cloud-dark">
                         {cert.category}
-                      </span>
+                      </span> */}
                     </div>
                     <p className="text-sm text-silver-darker leading-relaxed mb-4">{cert.desc}</p>
-                    <div className="grid grid-cols-3 gap-3 text-xs">
+                    {/* <div className="grid grid-cols-3 gap-3 text-xs">
                       <div>
                         <span className="text-silver block">Scope</span>
                         <span className="text-charcoal font-medium">{cert.scope}</span>
@@ -150,7 +151,7 @@ export function CertificationsPage() {
                         <span className="text-silver block">Certified By</span>
                         <span className="text-charcoal font-medium">{cert.body}</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -160,7 +161,7 @@ export function CertificationsPage() {
       </section>
 
       {/* Testing Lab */}
-      <section className="py-16 lg:py-24 bg-cloud-lighter">
+      {/* <section className="py-16 lg:py-24 bg-cloud-lighter">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <span className="text-silver-dark font-semibold text-sm uppercase tracking-wider">Quality Assurance</span>
@@ -190,27 +191,63 @@ export function CertificationsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMG.fabricTexture1} alt="Fabric texture" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-charcoal/90" />
-        </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Need Certification Documentation?</h2>
-          <p className="text-silver mb-8">
-            Lorem ipsum dolor sit amet. Request copies of our certifications, test reports, or compliance documentation for your records.
-          </p>
-          <button
-            onClick={() => navigate('contact')}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-charcoal font-bold rounded-lg hover:bg-cloud-light transition-colors"
-          >
-            Request Documentation <ArrowRight className="w-5 h-5" />
-          </button>
-        </div>
-      </section>
+  <div className="absolute inset-0">
+    <img
+      src={IMG.fabricTexture1}
+      alt="Fabric texture"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-charcoal-dark/90" />
+    <div className="absolute inset-0 bg-weave-dark" />
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
+    
+    <h2
+      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+      style={{ fontFamily: "'Poppins', sans-serif" }}
+    >
+      Experience Our Quality Firsthand
+    </h2>
+
+    <p
+      className="text-sm sm:text-base lg:text-lg text-silver max-w-2xl mx-auto mb-8 sm:mb-10 px-4"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      Request a free fabric sample and evaluate our premium materials, 
+      craftsmanship, and finishing standards before placing your bulk order.
+      Our team will ensure quick dispatch with complete product details.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+      
+      {/* Primary Button */}
+      <button
+        onClick={() => navigate('contact')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-charcoal font-bold rounded-lg text-base sm:text-lg hover:bg-cloud-light transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:scale-95 group"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        Request a Free Sample
+        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      {/* Secondary Button */}
+      <button
+        onClick={() => navigate('products')}
+        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-lg text-base sm:text-lg border border-white/20 transition-all duration-300 hover:border-white/40 active:scale-95"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        View Our Products
+      </button>
+
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

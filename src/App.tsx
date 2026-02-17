@@ -1,15 +1,19 @@
-import { NavigationProvider, useNavigation } from './context/NavigationContext';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ProductsPage } from './pages/ProductsPage';
-import { IndustryPage } from './pages/IndustryPage';
-import { ManufacturingPage } from './pages/ManufacturingPage';
-import { SustainabilityPage } from './pages/SustainabilityPage';
-import { CertificationsPage } from './pages/CertificationsPage';
-import { BlogPage } from './pages/BlogPage';
-import { ContactPage } from './pages/ContactPage';
+import React from "react";
+import { NavigationProvider, useNavigation } from "./context/NavigationContext";
+
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
+import { ProductsPage } from "./pages/ProductsPage";
+import { IndustryPage } from "./pages/IndustryPage";
+import { ManufacturingPage } from "./pages/ManufacturingPage";
+import { SustainabilityPage } from "./pages/SustainabilityPage";
+import { CertificationsPage } from "./pages/CertificationsPage";
+import { BlogPage } from "./pages/BlogPage";
+import { ContactPage } from "./pages/ContactPage";
+import { OurCsrPage } from "./pages/ourcsrpage"; // ✅ Capital letter
 
 function PageRouter() {
   const { currentPage } = useNavigation();
@@ -24,6 +28,7 @@ function PageRouter() {
     certifications: <CertificationsPage />,
     blog: <BlogPage />,
     contact: <ContactPage />,
+    ourcsr: <OurCsrPage />, // ✅ fixed
   };
 
   return <>{pages[currentPage] || <HomePage />}</>;
